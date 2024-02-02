@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asistencia</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.3/xlsx.full.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/date-fns/2.28.0/date_fns.min.js"></script>
+</head>
+<body>
+
+    <h2>Asistencia</h2>
+
+    <label for="excelFileInput" class="custom-file-upload">
+        <input type="file" id="excelFileInput" onchange="leerExcel()" accept=".xls, .xlsx" />
+        Seleccionar Archivo Excel
+    </label>
+    <label for="" class="custom-file-upload">
+        <input type="button" id="botonDescarga" onclick="generarExcel()" style="display: none;" value="Descargar asistencia">
+    </label>
+    <table id="tablaRegistros">
+        <thead>
+            <!-- Los títulos de las columnas se llenarán dinámicamente desde el Excel -->
+        </thead>
+        <tbody>
+            <!-- Aquí se llenarán los datos desde el Excel -->
+        </tbody>
+    </table>
+
+    <script src="clean.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.5/xlsx.full.min.js"></script>
+
+
+</body>
+</html>
